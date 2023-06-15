@@ -556,7 +556,7 @@
 		function calculatepsscore(event) {
 
 			event.preventDefault(); // Prevent form submission
-
+			
 			totalpsquestions = 0;
 			totalpsscore = 0;
 			psscore = 0;
@@ -616,6 +616,69 @@
 					totalpsquestions++;
 				}
 			}
+
+
+			if (totalpsscore == 0){
+				psscore = 100;
+			} else if (totalpsscore == 1){
+				psscore = 94;
+			} else if (totalpsscore == 2){
+				psscore = 90;
+			} else if (totalpsscore == 3){
+				psscore = 85;
+			} else if (totalpsscore == 4){
+				psscore = 81;
+			} else if (totalpsscore == 5){
+				psscore = 78;
+			} else if (totalpsscore == 6){
+				psscore = 75;
+			} else if (totalpsscore == 7){
+				psscore = 73;
+			} else if (totalpsscore == 8){
+				psscore = 70;
+			} else if (totalpsscore == 9){
+				psscore = 68;
+			} else if (totalpsscore == 10){
+				psscore = 66;
+			} else if (totalpsscore == 11){
+				psscore = 65;
+			} else if (totalpsscore == 12){
+				psscore = 63;
+			} else if (totalpsscore == 13){
+				psscore = 61;
+			} else if (totalpsscore == 14){
+				psscore = 60;
+			} else if (totalpsscore == 15){
+				psscore = 58;
+			} else if (totalpsscore == 16){
+				psscore = 56;
+			} else if (totalpsscore == 17){
+				psscore = 54;
+			} else if (totalpsscore == 18){
+				psscore = 52;
+			} else if (totalpsscore == 19){
+				psscore = 49;
+			} else if (totalpsscore == 20){
+				psscore = 46;
+			} else if (totalpsscore == 21){
+				psscore = 42;
+			} else if (totalpsscore == 22){
+				psscore = 38;
+			} else if (totalpsscore == 23){
+				psscore = 33;
+			} else if (totalpsscore == 24){
+				psscore = 28;
+			} else if (totalpsscore == 25){
+				psscore = 22;
+			} else if (totalpsscore == 26){
+				psscore = 16;
+			} else if (totalpsscore == 27){
+				psscore = 8;
+			} else if (totalpsscore == 28){
+				psscore = 0;
+			}
+			
+
 
 		}
 
@@ -682,7 +745,7 @@
 				Sportscore = 100 - ((totalSportscore / totalSportquestions) * 100) / 4;
 				document.getElementById("Sport_result").innerHTML = "Your Sport/Rec score is: " + Math.round(Sportscore) + "/100";
 
-				psscore = 100 - ((totalpsscore / totalpsquestions) * 100) / 4;
+	
 				document.getElementById("ps_result").innerHTML = "Your PS score is: " + Math.round(psscore) + "/100" /* + "totalscore:" + totalpsscore + "psscore:" + psscore + "totalq:" + totalpsquestions */;
 			
 				QOLscore = 100 - ((totalQOLscore / totalQOLquestions) * 100) / 4;
